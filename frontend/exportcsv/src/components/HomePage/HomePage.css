@@ -1,0 +1,23 @@
+.navBarStyle{
+   
+    list-style-type: none;
+    display: inline;
+    font-size: 30px;
+ 
+    text-decoration: none;
+    
+}
+NavLink{
+    text-decoration: none;
+    color: whitesmoke;
+}
+.assignmentHeader{
+    text-align: center;
+    margin-top: 400px;
+    font-size: 100px;
+    font-family: 'Open Sans", Helvetica, sans-serif';
+    font-weight: bold;
+}
+.HomeHeader{
+    font-family: 'Open Sans", Helvetica, sans-serif';
+}
