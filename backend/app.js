@@ -87,9 +87,7 @@ app.post("/postImportUserData",(req,res)=>{
         })
         exportUser.save((err,data)=>{
             if (err) throw err;
-            else{
-                res.send({data})
-            }
+            
         })
     });
 })

@@ -28,9 +28,9 @@ export default function UserDataImport() {
         getDataFileAndRecord()
     }
     const saveImportedData = () => {
-        axios.post("http://localhost:5000/postImportUserData", rowData).then(res => {
+        axios.post("http://localhost:5000/postImportUserData", rowData).then( 
             alert("Data Saved")
-        })
+        )
     }
     const handleOnSubmit = (event) => {
         event.preventDefault();
@@ -66,7 +66,7 @@ export default function UserDataImport() {
         <div class="importClassMain" style={{ textAlign: "center" }}>
             <HomePage />
 
-            <h1 class="importCSVHeader">CSV Import Page</h1>
+            <h1 class="importCSVHeader">Import CSV</h1>
 
             <form class="mt-5">
                 <div class="formStyleImport">
@@ -92,7 +92,7 @@ export default function UserDataImport() {
 
 
             </form>
-            {showSaveButton && <button class="btn btn-primary" style={{ width: '10%', fontSize: '20px', marginLeft: '1900px' }} onClick={saveImportedData}>Save Imported Data</button>}
+            {showSaveButton && <button class="btn btn-primary" style={{ width: '16%%', fontSize: '27px', marginLeft: '1900px' }} onClick={saveImportedData}>Save Imported Data</button>}
             <table class="table table-bordered mt-5" style={{ marginLeft: '0px' }}>
                 {iscsv && columnData.map((header) => {
                     return (
